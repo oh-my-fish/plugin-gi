@@ -1,4 +1,4 @@
-function _update_gi_completions -d "Update completions for gitignore.io"
+function __gi_update_completions -d "Update completions for gitignore.io"
   set compl_dir ~/.config/fish/completions
   set compl_file "$compl_dir/gi.fish"
 
