@@ -17,5 +17,5 @@ function __gi_update_completions -d "Update completions for gitignore.io"
   end
 
   # Output new completions
-  echo complete -c gi -a \"update-completions $gi_list\" >$compl_file
+  echo "complete -c gi -a \"update-completions $gi_list\"" >$compl_file
 end
