@@ -4,7 +4,7 @@ function __gi_update_completions -d "Update completions for gitignore.io"
 
   # Download list of ignore types
   set -l gi_list (gi list | tr ',' ' ')
-  if test -z $gi_list
+  if test -z "$gi_list"
     echo "No result returned from gitignore.io" >&2
     return 1
   end
