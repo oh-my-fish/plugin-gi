@@ -18,4 +18,5 @@ function __gi_update_completions -d "Update completions for gitignore.io"
 
   # Output new completions
   echo "complete --command gi --no-files --arguments \"update-completions $gi_list\"" >$compl_file
+  source $compl_file
 end
