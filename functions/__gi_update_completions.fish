@@ -3,7 +3,7 @@ function __gi_update_completions -d "Update completions for gitignore.io"
   set compl_file "$compl_dir/gi.fish"
 
   # Download list of ignore types
-  set -l gi_list (gi list | tr ',' ' ')
+  set -l gi_list (curl -s https://www.gitignore.io/api/list | tr ',' ' ')
   if test -z "$gi_list"
     echo "No result returned from gitignore.io" >&2
     return 1
