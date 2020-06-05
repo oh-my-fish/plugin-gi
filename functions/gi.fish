@@ -5,5 +5,5 @@ function gi -d "gitignore.io cli for fish"
   end
 
   set -l params (echo $argv|tr ' ' ',')
-  curl -s https://www.gitignore.io/api/$params
+  curl --silent --location https://www.toptal.com/developers/gitignore/api/$params
 end
